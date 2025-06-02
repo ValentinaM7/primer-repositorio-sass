@@ -9,8 +9,26 @@ body {
     font-family: "jost", sans-serif;
 }
 
-/*----header-----*/
 
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: inherit !important;              /* Use the parent color */
+    background-color: transparent !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active {
+    color: inherit !important;              /* Prevent color change */
+    text-decoration: none !important;       /* Remove underline */
+    background-color: transparent !important;
+}
+.navbar .nav-link:hover {
+    color: gray !important;
+}    
 .container-fluid {
     background-color: #060709;
 }
