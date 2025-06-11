@@ -1,0 +1,124 @@
+/*index - hero and image*/
+.main-text {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-image: url(../img/underwater.jpg);
+    background-size: cover;
+    background-position: center 38%;
+    color: #fafafa;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+    p {
+        font-size: 60px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+}
+
+/*reviews*/
+.carousel-item {
+    img {
+        height: 250px;
+    }
+    .carousel-caption {
+        font-size: 24px;
+        padding-right: 40px;
+        padding-left: 40px;
+        margin-bottom: 20px;
+        background-color: #fafafa;
+        color: #060709;
+        border-radius: 10px;
+        height: 200px;
+            h3{
+                font-size: 18px;
+            }
+            h5{
+                font-size: 16px;
+            }
+    }
+}
+
+/* about the product_ cta buy and details*/
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 50px;
+
+    img {
+        height: 40vh;
+        width: 40vh;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-left: 40px;
+    }
+
+    div {
+        font-style: italic;
+        font-size: 24px;
+        color: #060709;
+        text-align: left;
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .button1 {
+        background-color: #fafafa;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 16px;
+        border-radius: 6px;
+        list-style: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        margin-right: 40px;
+        color: #060709;
+        font-size: 18px;
+    }
+
+    .button2 {
+        background-color: #060709;
+        color: #fafafa;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px 16px;
+        border-radius: 10px;
+        list-style: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+    }
+}
+
+/*collabs*/
+.collabs-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.collabs {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    margin-bottom: 30px;
+
+    img {
+        height: 85px;
+        width: auto;
+        border-radius: 10px;
+    }
+}

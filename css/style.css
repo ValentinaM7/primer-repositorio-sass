@@ -10,41 +10,44 @@ body {
 }
 
 
-.navbar .nav-link,
-.navbar .navbar-brand {
-    color: inherit !important;              /* Use the parent color */
-    background-color: transparent !important;
-}
-
-.navbar .nav-link:hover,
+/* .navbar .nav-link:hover,
 .navbar .nav-link:focus,
 .navbar .nav-link:active,
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus,
 .navbar .navbar-brand:active {
-    color: inherit !important;              /* Prevent color change */
-    text-decoration: none !important;       /* Remove underline */
+    color: inherit !important;             
+    text-decoration: none !important;       
     background-color: transparent !important;
-}
-.navbar .nav-link:hover {
-    color: gray !important;
-}    
-.container-fluid {
-    background-color: #060709;
+} */
+
+
+.navbar .nav-link,.navbar .navbar-brand {
+    color: #F0E9E9 !important;              
+    background-color: transparent !important;
+    transition: 0.6s;
 }
 
-.navbar .container-fluid {
+.navbar .nav-link:hover {
+    font-size: large !important;
+}    
+.navbar .navbar-brand:hover{
+    font-size: 23px;
+}
+
+.container-fluid {
+    background-color: #060709;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
 .navbar-toggler {
     background-color: #F0E9E9;
 }
 
-
-.container-fluid a {
+.container-fluid .navbar-brand{
     color: #F0E9E9;
 }
 
@@ -53,9 +56,6 @@ body {
     padding-right: 30px !important;
 }
 
-.navbar-nav a {
-    color: #F0E9E9;
-}
 
 .navbar {
     background-color: #060709;
@@ -66,10 +66,6 @@ body {
     justify-content: space-between;
 }
 
-header nav ul li a {
-    color: #fafafa;
-    text-decoration: none;
-}
 
 /*?-----hero------*/
 .main-text {
@@ -220,11 +216,6 @@ footer div img {
     align-content: flex-start;
 }
 
-.contact-section .enlaces {
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-section a {
     text-transform: uppercase;
     text-decoration: none;
@@ -321,7 +312,7 @@ footer div img {
     grid-row: span 2;
 }
 
-/*----button-------*/
+/*----button-
 .button3 {
     padding: 10px;
     background-color: #fafafa;
@@ -334,13 +325,12 @@ footer div img {
     margin-right: 40px;
     color: #060709;
 }
-
 .returnhome {
     text-align: center;
     width: 100%;
     margin-bottom: 40px;
 }
-
+---*/
 /*!---contact_us----*/
 .top_pict4 {
     display: flex;
@@ -368,6 +358,12 @@ footer div img {
     background-color: #060709;
     color: #F0E9E9;
     margin-bottom: 40px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-inline: 200px;
 }
 
 .formulario {
@@ -384,6 +380,7 @@ footer div img {
     padding: 5px;
     margin: 10px;
     border-radius: 8px;
+    height: 40px;
 }
 
 .formulario .form textarea {
@@ -393,11 +390,6 @@ footer div img {
 }
 
 .formulario .form input {
-    height: 40px;
-    border-radius: 8px;
-}
-
-.formulario .form select {
     height: 40px;
     border-radius: 8px;
 }
@@ -429,26 +421,14 @@ footer div img {
     margin-bottom: px;
 }
 
-body main section button {
+/* body main section button {
     text-align: center;
-}
+} */
 
 .formulario .form h2 {
     text-align: center;
     margin-bottom: 15px;
 }
-
-body main section form {
-    text-align: left;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin-inline: 200px;
-}
-
-
-
 
 /*!---details----*/
 .top_pict {
@@ -496,7 +476,7 @@ body main section form {
     padding: 30px;
 }
 
-.list-of-details p:nth-child(n) {
+.list-of-details div p:nth-child(n) {
     width: 60%;
 }
 
