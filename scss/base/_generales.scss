@@ -27,6 +27,12 @@ body {
             display: flex;
             flex-direction: column;
             align-content: flex-start;
+            a{
+                transition: 0.6s;
+                &:hover{
+                text-decoration: underline;
+            }
+            }
         }
     }
 
@@ -46,9 +52,17 @@ body {
         h5 {
             text-transform: uppercase;
             margin: 10px 30px;
+            transition: 0.6s;
+            &:hover{
+                font-size: 23px;
+            }
 
             a {
                 text-transform: uppercase;
+                transition: 0.6s;
+                &:hover{
+                font-size: 23px;
+            }
             }
         }
     }

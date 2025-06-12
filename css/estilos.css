@@ -26,6 +26,12 @@ body {
   flex-direction: column;
   align-content: flex-start;
 }
+.footer-container .footer-section .contact-section a {
+  transition: 0.6s;
+}
+.footer-container .footer-section .contact-section a:hover {
+  text-decoration: underline;
+}
 .footer-container .footer-section a {
   text-transform: uppercase;
   text-decoration: none;
@@ -38,9 +44,17 @@ body {
 .footer-container .footer-section h5 {
   text-transform: uppercase;
   margin: 10px 30px;
+  transition: 0.6s;
+}
+.footer-container .footer-section h5:hover {
+  font-size: 23px;
 }
 .footer-container .footer-section h5 a {
   text-transform: uppercase;
+  transition: 0.6s;
+}
+.footer-container .footer-section h5 a:hover {
+  font-size: 23px;
 }
 
 /*header*/
@@ -84,41 +98,48 @@ body {
 
 /*index - hero and image*/
 .main-text {
+  position: relative;
   display: flex;
   align-content: center;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
   background-image: url(../img/underwater.jpg);
   background-size: cover;
   background-position: center 38%;
   color: #fafafa;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding: 15vh 20px;
+  text-align: center;
+}
+.main-text::before {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
 .main-text p {
-  font-size: 60px;
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
   font-style: italic;
   text-align: center;
   padding: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 /*reviews*/
 .carousel-item img {
   height: 250px;
+  object-fit: cover;
 }
 .carousel-item .carousel-caption {
-  font-size: 24px;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-bottom: 20px;
-  background-color: #fafafa;
-  color: #060709;
-  border-radius: 10px;
-  height: 200px;
+  display: flex;
+  align-content: center;
+}
+.carousel-item .carousel-caption h2 {
+  font-size: 22px;
 }
 .carousel-item .carousel-caption h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .carousel-item .carousel-caption h5 {
   font-size: 16px;
@@ -137,42 +158,53 @@ body {
   height: 40vh;
   width: 40vh;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   margin-left: 40px;
 }
 .product div {
   font-style: italic;
-  font-size: 24px;
+  font-size: 20px;
   color: #060709;
   text-align: left;
   padding: 20px;
   margin-left: 30px;
 }
-.product p {
+.product div p {
+  font-size: 20px;
   margin-bottom: 20px;
+}
+.product .button1,
+.product .button2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 10px 5px 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 .product .button1 {
   background-color: #fafafa;
-  text-decoration: none;
   border: 1px solid black;
-  padding: 10px 16px;
-  border-radius: 6px;
   list-style: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   margin-right: 40px;
   color: #060709;
   font-size: 18px;
 }
+.product .button1:hover {
+  background-color: #e6e6e6;
+}
 .product .button2 {
   background-color: #060709;
   color: #fafafa;
-  text-decoration: none;
   border: 1px solid black;
-  padding: 10px 16px;
-  border-radius: 10px;
   list-style: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   font-size: 18px;
+}
+.product .button2:hover {
+  background-color: #333;
 }
 
 /*collabs*/
@@ -197,6 +229,10 @@ body {
   width: auto;
   border-radius: 10px;
 }
+.collabs img:hover {
+  transform: scale(120%);
+  transition-duration: 1s;
+}
 
 /*about us*/
 .top_pict2 {
@@ -207,7 +243,7 @@ body {
   background-size: cover;
   background-position: center 28%;
   height: 120px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .top_pict2 p {
   color: #F0E9E9;
@@ -269,7 +305,7 @@ body {
   background-size: cover;
   background-position: center 60%;
   height: 120px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .top_pict4 p {
@@ -354,7 +390,7 @@ body {
   background-size: cover;
   background-position: center 55%;
   height: 120px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .top_pict p {
@@ -400,7 +436,7 @@ body {
   background-size: cover;
   background-position: center 48%;
   height: 120px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .top_pict3 p {
@@ -450,53 +486,6 @@ body {
   color: #060709;
 }
 
-@media (max-width: 1088px) {
-  .carousel .carousel-inner .carousel-item .carousel-caption {
-    font-size: 18px;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    height: 170px;
-    align-items: center;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-    font-size: 14px;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 12px;
-  }
-}
-@media (max-width: 1000px) {
-  .carousel .carousel-inner .carousel-item .carousel-item img {
-    height: 170px;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption {
-    font-size: 16px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    height: 140px;
-    align-items: flex-start;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-    font-size: 12px;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-    font-size: 12px;
-  }
-}
-@media (max-width: 823px) {
-  .carousel .carousel-inner .carousel-item .carousel-caption {
-    background-color: #060709;
-    color: #F0E9E9;
-    height: 140px;
-  }
-  .carousel .carousel-indicators {
-    margin-bottom: 0px;
-  }
-}
 @media screen and (max-width: 800px) {
   .formulario .form {
     width: 70%;
@@ -513,17 +502,14 @@ body {
   .d-none {
     display: block !important;
   }
-  .carousel .carousel-inner .carousel-item {
-    margin-top: none;
+}
+@media screen and (max-width: 768px) {
+  .main-text p {
+    font-size: 40px;
   }
 }
 @media (max-width: 695px) {
-  .product div .button1 {
-    padding: 8px 14px;
-    border-radius: 4px;
-    margin-right: 10px;
-    font-size: 14px;
-  }
+  .product div .button1,
   .product div .button2 {
     padding: 8px 14px;
     border-radius: 4px;
@@ -532,17 +518,11 @@ body {
   }
 }
 @media (max-width: 640px) {
-  .product div .button1 {
+  .product div .button1,
+  .product div .button2 {
     padding: 6px 12px;
     border-radius: 4px;
     margin-right: 8px;
-    font-size: 12px;
-  }
-  .product div .button2 {
-    padding: 6px 16px;
-    border-radius: 4px;
-    margin-right: 8px;
-    font-size: 12px;
   }
   .product div {
     font-size: 16px;
@@ -661,9 +641,15 @@ body {
   }
 }
 @media (max-width: 530px) {
-  .carousel .carousel-inner .carousel-item .carousel-caption {
-    font-size: 14px;
+  .carousel .carousel-inner .carousel-item .carousel-caption .h2 {
+    font-size: 16px;
     gap: 0px;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .h3 {
+    font-size: 14px;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .h5 {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 470px) {

@@ -1,59 +1,58 @@
+// @media (max-width:1088px) {
+//     .carousel .carousel-inner .carousel-item .carousel-caption {
+//         font-size: 18px;
+//         padding-right: 25px;
+//         padding-left: 25px;
+//         margin-bottom: 10px;
+//         border-radius: 10px;
+//         height: 170px;
+//         align-items: center;
+//     }
 
-@media (max-width:1088px) {
-    .carousel .carousel-inner .carousel-item .carousel-caption {
-        font-size: 18px;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        height: 170px;
-        align-items: center;
-    }
+//     .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+//         font-size: 14px;
+//     }
 
-    .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-        font-size: 14px;
-    }
+//     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+//         font-size: 12px;
+//     }
+// }
 
-    .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-        font-size: 12px;
-    }
-}
+// @media (max-width:1000px) {
+//     .carousel .carousel-inner .carousel-item .carousel-item img {
+//         height: 170px;
+//     }
 
-@media (max-width:1000px) {
-    .carousel .carousel-inner .carousel-item .carousel-item img{
-        height: 170px;
-    }
-    
-    .carousel .carousel-inner .carousel-item .carousel-caption {
-        font-size: 16px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        height: 140px;
-        align-items: flex-start;
-    }
+//     .carousel .carousel-inner .carousel-item .carousel-caption {
+//         font-size: 16px;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//         margin-bottom: 5px;
+//         border-radius: 5px;
+//         height: 140px;
+//         align-items: flex-start;
+//     }
 
-    .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-        font-size: 12px;
-    }
+//     .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+//         font-size: 12px;
+//     }
 
-    .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-        font-size: 12px;
-    }
-}
+//     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+//         font-size: 12px;
+//     }
+// }
 
-@media (max-width:823px) {
-    .carousel .carousel-inner .carousel-item .carousel-caption {
-        background-color: #060709;
-        color: #F0E9E9;
-        height: 140px;
-    }
+// @media (max-width:823px) {
+//     .carousel .carousel-inner .carousel-item .carousel-caption {
+//         background-color: #060709;
+//         color: #F0E9E9;
+//         height: 140px;
+//     }
 
-    .carousel .carousel-indicators{
-        margin-bottom: 0px;
-    }
-}
+//     .carousel .carousel-indicators {
+//         margin-bottom: 0px;
+//     }
+// }
 
 @media screen and (max-width: 800px) {
     .formulario .form {
@@ -69,24 +68,25 @@
     }
 }
 
-@media screen and (max-width:773px){
-    .d-none{
+@media screen and (max-width:773px) {
+    .d-none {
         display: block !important;
     }
 
-    .carousel .carousel-inner .carousel-item{
-        margin-top: none;
+    // .carousel .carousel-inner .carousel-item {
+    //     margin-top: none;
+    // }
+}
+
+@media screen and (max-width: 768px) {
+    .main-text p {
+        font-size: 40px;
     }
 }
 
 @media (max-width: 695px) {
-    .product div .button1 {
-        padding: 8px 14px;
-        border-radius: 4px;
-        margin-right: 10px;
-        font-size: 14px;
-    }
 
+    .product div .button1,
     .product div .button2 {
         padding: 8px 14px;
         border-radius: 4px;
@@ -96,18 +96,12 @@
 }
 
 @media (max-width: 640px) {
-    .product div .button1 {
+
+    .product div .button1,
+    .product div .button2 {
         padding: 6px 12px;
         border-radius: 4px;
         margin-right: 8px;
-        font-size: 12px;
-    }
-
-    .product div .button2 {
-        padding: 6px 16px;
-        border-radius: 4px;
-        margin-right: 8px;
-        font-size: 12px;
     }
 
     .product div {
@@ -181,7 +175,7 @@
         text-transform: uppercase;
     }
 
-    .container-intro .robandy1 .robandy{ 
+    .container-intro .robandy1 .robandy {
         width: auto;
         height: 200px;
     }
@@ -204,7 +198,7 @@
     }
 }
 
-@media (max-width:650px){ 
+@media (max-width:650px) {
     .footer-container .footer-section .contact-section a {
         font-size: 14px;
         font-weight: none;
@@ -219,7 +213,8 @@
         font-size: 14px;
     }
 }
-@media screen and (max-width:550px){
+
+@media screen and (max-width:550px) {
     .owners .container-intro {
         display: flex;
         flex-direction: column;
@@ -231,6 +226,7 @@
         font-size: 16px;
     }
 }
+
 @media (max-width: 538px) {
     .product {
         display: flex;
@@ -247,21 +243,30 @@
     }
 }
 
-@media (max-width:530px){
-    .carousel .carousel-inner .carousel-item .carousel-caption{
-        font-size: 14px;
-        gap: 0px;
-    } 
+@media (max-width:530px) {
+    .carousel .carousel-inner .carousel-item .carousel-caption {
+        .h2{
+            font-size: 16px;
+            gap: 0px;
+        }
+        .h3{
+            font-size: 14px;
+        }
+        .h5{
+            font-size: 12px;
+        }
+    }
 }
 
-@media screen and (max-width:470px){
-    .formulario .form h2{
+@media screen and (max-width:470px) {
+    .formulario .form h2 {
         font-size: 18px;
     }
+
     .form .subscribe1 {
         font-size: 14px;
     }
-    
+
     .formulario {
         font-size: 14px;
         padding: 10px;
@@ -269,7 +274,7 @@
     }
 }
 
-@media screen and (max-width: 450px){ 
+@media screen and (max-width: 450px) {
     .list-of-details div {
         display: flex;
         flex-direction: column;
@@ -310,14 +315,15 @@
     }
 }
 
-@media screen and (max-width:365px){
-    .formulario .form h2{
+@media screen and (max-width:365px) {
+    .formulario .form h2 {
         font-size: 16px;
     }
+
     .form .subscribe1 {
         font-size: 12px;
     }
-    
+
     .formulario {
         font-size: 12px;
         padding: 5px;
