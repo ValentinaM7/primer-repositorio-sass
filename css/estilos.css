@@ -17,44 +17,35 @@ body {
   font-size: 18px;
   padding: 20px;
 }
-.footer-container img {
-  height: 60px;
-  padding-right: 30px;
-}
-.footer-container .footer-section .contact-section {
+.footer-container .footer-section {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: space-between;
+  width: 200px;
 }
-.footer-container .footer-section .contact-section a {
+.footer-container .footer-section h3 {
+  font-size: 18px;
   transition: 0.6s;
+  text-transform: uppercase;
 }
-.footer-container .footer-section .contact-section a:hover {
-  text-decoration: underline;
+.footer-container .footer-section h3:hover {
+  font-size: 20px;
 }
-.footer-container .footer-section a {
+.footer-container .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-container .footer-section ul a {
   text-transform: uppercase;
   text-decoration: none;
-  list-style: none;
   color: #fafafa;
   text-transform: initial;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-}
-.footer-container .footer-section h5 {
-  text-transform: uppercase;
-  margin: 10px 30px;
   transition: 0.6s;
 }
-.footer-container .footer-section h5:hover {
-  font-size: 23px;
-}
-.footer-container .footer-section h5 a {
-  text-transform: uppercase;
-  transition: 0.6s;
-}
-.footer-container .footer-section h5 a:hover {
-  font-size: 23px;
+.footer-container .footer-section ul a:hover {
+  text-decoration: underline;
 }
 
 /*header*/
@@ -79,6 +70,7 @@ body {
 .navbar .container-fluid .navbar-brand {
   color: #F0E9E9 !important;
   background-color: transparent !important;
+  padding-bottom: 0;
   transition: 0.6s;
 }
 .navbar .container-fluid .navbar-brand:hover {
@@ -98,7 +90,6 @@ body {
 
 /*index - hero and image*/
 .main-text {
-  position: relative;
   display: flex;
   align-content: center;
   flex-direction: column;
@@ -256,27 +247,32 @@ body {
 
 .owners .paragraphikigai {
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   margin-top: 10px;
 }
 .owners .container-intro {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 100px;
 }
 .owners .container-intro .robandy1 {
-  width: 30%;
+  max-width: 20%;
   text-align: center;
+  height: 500px;
+  padding-bottom: 20px;
 }
 .owners .container-intro .robandy1 .robandy {
-  width: 250px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 .owners .container-intro .robandy1 h2 {
   font-size: 24px;
   padding-top: 10px;
+}
+.owners .container-intro .robandy1 p {
+  font-size: 16px;
 }
 
 .grid-pictures {
@@ -284,12 +280,16 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 200px);
   gap: 5px;
-  margin: 30px 40px 0;
+  margin: 20px 70px;
 }
 .grid-pictures .grid-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
+}
+.grid-pictures .grid-item img:hover {
+  transform: scale(120%);
 }
 .grid-pictures .grid-item.img-1, .grid-pictures .grid-item.img-4 {
   grid-column: span 2;
@@ -486,6 +486,17 @@ body {
   color: #060709;
 }
 
+@media screen and (max-width: 1092px) {
+  .container-intro .robandy1 {
+    width: 300px;
+  }
+  .container-intro .robandy1 .robandy {
+    width: 10px;
+  }
+  .container-intro .robandy1 h2 {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 800px) {
   .formulario .form {
     width: 70%;
@@ -566,6 +577,18 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  .container-intro .robandy1 .robandy {
+    width: auto;
+    height: 200px;
+  }
+  .container-intro .robandy1 h2 {
+    font-size: 20px;
+    font-style: bold;
+  }
+  .container-intro .robandy1 {
+    width: 70%;
+    text-align: center;
+  }
 }
 @media (max-width: 600px) {
   .main-text p {
@@ -583,36 +606,11 @@ body {
     font-weight: 150px;
     text-transform: uppercase;
   }
-  .container-intro .robandy1 .robandy {
-    width: auto;
-    height: 200px;
-  }
-  .container-intro .robandy1 h2 {
-    font-size: 20px;
-    font-style: bold;
-  }
-  .container-intro .robandy1 {
-    width: 70%;
-    text-align: center;
-  }
   .owners .paragraphikigai {
     text-align: center;
     padding: 30px;
     margin-top: 10px;
     font-size: 16px;
-  }
-}
-@media (max-width: 650px) {
-  .footer-container .footer-section .contact-section a {
-    font-size: 14px;
-    font-weight: none;
-  }
-  footer .footer-container img {
-    height: 30px;
-    padding-right: 15px;
-  }
-  .footer-container .footer-section .contact-section h5 {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 550px) {

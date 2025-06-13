@@ -17,56 +17,44 @@ body {
     font-size: 18px;
     padding: 20px;
 
-    img {
-        height: 60px;
-        padding-right: 30px;
-    }
-
     .footer-section {
-        .contact-section {
-            display: flex;
-            flex-direction: column;
-            align-content: flex-start;
-            a{
-                transition: 0.6s;
-                &:hover{
-                text-decoration: underline;
-            }
-            }
-        }
-    }
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        width: 200px;
 
-    .footer-section {
-        a {
-            text-transform: uppercase;
-            text-decoration: none;
-            list-style: none;
-            color: #fafafa;
-            text-transform: initial;
+        h3 {
             font-size: 18px;
-            text-align: center;
-        }
-    }
-
-    .footer-section {
-        h5 {
-            text-transform: uppercase;
-            margin: 10px 30px;
             transition: 0.6s;
-            &:hover{
-                font-size: 23px;
+            text-transform: uppercase;
+
+            &:hover {
+                font-size: 20px;
             }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
 
             a {
                 text-transform: uppercase;
+                text-decoration: none;
+                color: #fafafa;
+                text-transform: initial;
+                font-size: 16px;
+                text-align: center;
                 transition: 0.6s;
-                &:hover{
-                font-size: 23px;
-            }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
 }
+
+
 
 /*header*/
 .navbar {
@@ -87,14 +75,18 @@ body {
             height: 50px;
             padding-right: 30px !important;
         }
+
         .navbar-brand {
             color: #F0E9E9 !important;
             background-color: transparent !important;
+            padding-bottom: 0;
             transition: 0.6s;
-            &:hover{
+
+            &:hover {
                 font-size: 23px;
             }
         }
+
         .navbar-toggler {
             background-color: #F0E9E9;
         }

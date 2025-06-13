@@ -1,58 +1,15 @@
-// @media (max-width:1088px) {
-//     .carousel .carousel-inner .carousel-item .carousel-caption {
-//         font-size: 18px;
-//         padding-right: 25px;
-//         padding-left: 25px;
-//         margin-bottom: 10px;
-//         border-radius: 10px;
-//         height: 170px;
-//         align-items: center;
-//     }
-
-//     .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-//         font-size: 14px;
-//     }
-
-//     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-//         font-size: 12px;
-//     }
-// }
-
-// @media (max-width:1000px) {
-//     .carousel .carousel-inner .carousel-item .carousel-item img {
-//         height: 170px;
-//     }
-
-//     .carousel .carousel-inner .carousel-item .carousel-caption {
-//         font-size: 16px;
-//         padding-right: 15px;
-//         padding-left: 15px;
-//         margin-bottom: 5px;
-//         border-radius: 5px;
-//         height: 140px;
-//         align-items: flex-start;
-//     }
-
-//     .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-//         font-size: 12px;
-//     }
-
-//     .carousel .carousel-inner .carousel-item .carousel-caption h5 {
-//         font-size: 12px;
-//     }
-// }
-
-// @media (max-width:823px) {
-//     .carousel .carousel-inner .carousel-item .carousel-caption {
-//         background-color: #060709;
-//         color: #F0E9E9;
-//         height: 140px;
-//     }
-
-//     .carousel .carousel-indicators {
-//         margin-bottom: 0px;
-//     }
-// }
+@media screen and (max-width: 1092px){
+    .container-intro .robandy1{
+        width: 300px;
+    }
+    .container-intro .robandy1 .robandy{
+        width: 10px;
+    }
+    
+    .container-intro .robandy1 h2 {
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .formulario .form {
@@ -72,10 +29,6 @@
     .d-none {
         display: block !important;
     }
-
-    // .carousel .carousel-inner .carousel-item {
-    //     margin-top: none;
-    // }
 }
 
 @media screen and (max-width: 768px) {
@@ -154,6 +107,20 @@
         margin-top: 25px;
         margin-bottom: 25px;
     }
+    .container-intro .robandy1 .robandy {
+        width: auto;
+        height: 200px;
+    }
+
+    .container-intro .robandy1 h2 {
+        font-size: 20px;
+        font-style: bold;
+    }
+
+    .container-intro .robandy1 {
+        width: 70%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -175,20 +142,6 @@
         text-transform: uppercase;
     }
 
-    .container-intro .robandy1 .robandy {
-        width: auto;
-        height: 200px;
-    }
-
-    .container-intro .robandy1 h2 {
-        font-size: 20px;
-        font-style: bold;
-    }
-
-    .container-intro .robandy1 {
-        width: 70%;
-        text-align: center;
-    }
 
     .owners .paragraphikigai {
         text-align: center;
@@ -198,21 +151,7 @@
     }
 }
 
-@media (max-width:650px) {
-    .footer-container .footer-section .contact-section a {
-        font-size: 14px;
-        font-weight: none;
-    }
 
-    footer .footer-container img {
-        height: 30px;
-        padding-right: 15px;
-    }
-
-    .footer-container .footer-section .contact-section h5 {
-        font-size: 14px;
-    }
-}
 
 @media screen and (max-width:550px) {
     .owners .container-intro {
