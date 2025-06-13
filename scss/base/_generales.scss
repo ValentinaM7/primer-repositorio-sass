@@ -18,10 +18,11 @@ body {
     padding: 20px;
 
     .footer-section {
-        display: flex;
         flex-direction: column;
-        align-content: space-between;
-        width: 200px;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 300px;
+        align-items: center;
 
         h3 {
             font-size: 18px;
@@ -36,6 +37,7 @@ body {
         ul {
             list-style: none;
             padding: 0;
+            align-items: center;
 
             li {
                 a {

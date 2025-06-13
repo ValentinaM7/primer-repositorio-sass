@@ -1,11 +1,8 @@
-@media screen and (max-width: 1092px){
-    .container-intro .robandy1{
+@media screen and (max-width: 1092px) {
+    .container-intro .robandy1 {
         width: 300px;
     }
-    .container-intro .robandy1 .robandy{
-        width: 10px;
-    }
-    
+
     .container-intro .robandy1 h2 {
         font-size: 18px;
     }
@@ -107,19 +104,10 @@
         margin-top: 25px;
         margin-bottom: 25px;
     }
-    .container-intro .robandy1 .robandy {
-        width: auto;
-        height: 200px;
-    }
 
     .container-intro .robandy1 h2 {
         font-size: 20px;
         font-style: bold;
-    }
-
-    .container-intro .robandy1 {
-        width: 70%;
-        text-align: center;
     }
 }
 
@@ -155,14 +143,18 @@
 
 @media screen and (max-width:550px) {
     .owners .container-intro {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
+        padding-bottom: 0px;
+        width: 100%;
     }
 
-    .robandy1 h2 {
-        font-size: 16px;
+    .owners .container-intro .robandy1 {
+        max-width: none;
+        width: 60%;
+        margin-bottom: 30px;
+        height: auto;
     }
 }
 
@@ -184,32 +176,34 @@
 
 @media (max-width:530px) {
     .carousel .carousel-inner .carousel-item .carousel-caption {
-        .h2{
+        .h2 {
             font-size: 16px;
             gap: 0px;
         }
-        .h3{
+
+        .h3 {
             font-size: 14px;
         }
-        .h5{
+
+        .h5 {
             font-size: 12px;
         }
     }
 }
 
 @media screen and (max-width:470px) {
+    // .formulario {
+    //     font-size: 14px;    
+    // }
+    .formulario .form{
+        width: 60%;
+        padding: 18px;
+    }
+    .formulario .form .subscribe1 {
+        font-size: 22px;
+    }
     .formulario .form h2 {
-        font-size: 18px;
-    }
-
-    .form .subscribe1 {
-        font-size: 14px;
-    }
-
-    .formulario {
-        font-size: 14px;
-        padding: 10px;
-        margin-inline: 10px;
+        font-size: 24px !important;
     }
 }
 

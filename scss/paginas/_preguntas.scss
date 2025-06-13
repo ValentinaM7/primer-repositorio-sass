@@ -43,16 +43,9 @@
                 .accordion-button {
                     background-color: #060709 !important;
                     color: #fafafa;
-
                     &:not(.collapsed) {
                         background-color: #060709 !important;
                         color: #fafafa;
-                    }
-
-                    &:true {
-                        background-color: #060709 !important;
-                        color: #fafafa;
-                        box-shadow: none;
                     }
                 }
                 .accordion-collapse {
