@@ -37,72 +37,73 @@ body {
             list-style: none;
             padding: 0;
 
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                color: #fafafa;
-                text-transform: initial;
-                font-size: 16px;
-                text-align: center;
-                transition: 0.6s;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-
-
-/*header*/
-.navbar {
-    background-color: #060709;
-    display: flex;
-    height: 10vh;
-    color: #fafafa;
-    align-items: center;
-    justify-content: space-between;
-
-    .container-fluid {
-        background-color: #060709;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        img {
-            height: 50px;
-            padding-right: 30px !important;
-        }
-
-        .navbar-brand {
-            color: #F0E9E9 !important;
-            background-color: transparent !important;
-            padding-bottom: 0;
-            transition: 0.6s;
-
-            &:hover {
-                font-size: 23px;
-            }
-        }
-
-        .navbar-toggler {
-            background-color: #F0E9E9;
-        }
-
-        .navbar-collapse {
-            .navbar-nav {
-                .nav-link {
-                    color: #F0E9E9 !important;
-                    background-color: transparent !important;
+            li {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #fafafa;
+                    text-transform: initial;
+                    font-size: 16px;
+                    text-align: center;
                     transition: 0.6s;
 
                     &:hover {
-                        font-size: large !important;
+                        text-decoration: underline;
                     }
                 }
             }
         }
     }
 }
+
+
+    /*header*/
+    .navbar {
+        background-color: #060709;
+        display: flex;
+        height: 10vh;
+        color: #fafafa;
+        align-items: center;
+        justify-content: space-between;
+
+        .container-fluid {
+            background-color: #060709;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                height: 50px;
+                padding-right: 30px !important;
+            }
+
+            .navbar-brand {
+                color: #F0E9E9 !important;
+                background-color: transparent !important;
+                padding-bottom: 0;
+                transition: 0.6s;
+
+                &:hover {
+                    font-size: 23px;
+                }
+            }
+
+            .navbar-toggler {
+                background-color: #F0E9E9;
+            }
+
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-link {
+                        color: #F0E9E9 !important;
+                        background-color: transparent !important;
+                        transition: 0.6s;
+
+                        &:hover {
+                            font-size: large !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
