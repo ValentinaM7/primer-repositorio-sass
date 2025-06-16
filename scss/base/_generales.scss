@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: $color_detalles;
     font-family: "jost", sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #060709;
-    color: #fafafa;
+    color: $color_detalles;
     font-size: 18px;
     padding: 20px;
 
@@ -43,7 +43,7 @@ body {
                 a {
                     text-transform: uppercase;
                     text-decoration: none;
-                    color: #fafafa;
+                    color: $color_detalles;
                     text-transform: initial;
                     font-size: 16px;
                     text-align: center;
@@ -64,7 +64,7 @@ body {
         background-color: #060709;
         display: flex;
         height: 10vh;
-        color: #fafafa;
+        color: $color_detalles;
         align-items: center;
         justify-content: space-between;
 
@@ -80,7 +80,7 @@ body {
             }
 
             .navbar-brand {
-                color: #F0E9E9 !important;
+                color: $color_detalles !important;
                 background-color: transparent !important;
                 padding-bottom: 0;
                 transition: 0.6s;
@@ -91,13 +91,13 @@ body {
             }
 
             .navbar-toggler {
-                background-color: #F0E9E9;
+                background-color: $color_detalles;
             }
 
             .navbar-collapse {
                 .navbar-nav {
                     .nav-link {
-                        color: #F0E9E9 !important;
+                        color: $color_detalles !important;
                         background-color: transparent !important;
                         transition: 0.6s;
 
