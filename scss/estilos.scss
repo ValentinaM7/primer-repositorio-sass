@@ -1,9 +1,9 @@
-@use "base/generales" as*;
-@use "base/funcionalidades" as*;
-@use "paginas/main-hero" as*;
-@use "paginas/aboutus" as*;
-@use "paginas/contacto" as*;
-@use "paginas/detalles" as*;
-@use "paginas/preguntas" as*;
-@use "base/queries" as*;
+@import "base/generales";
+@import "base/funcionalidades";
+@import "paginas/main-hero";
+@import "paginas/aboutus";
+@import "paginas/contacto";
+@import "paginas/detalles";
+@import "paginas/preguntas";
+@import "base/queries";
 

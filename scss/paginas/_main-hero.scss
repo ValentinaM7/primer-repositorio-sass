@@ -1,4 +1,6 @@
 /*index - hero and image*/
+@use "../base/funcionalidades"; 
+
 .main-text {
     display: flex;
     align-content: center;
@@ -7,7 +9,7 @@
     background-image: url(../img/underwater.jpg);
     background-size: cover;
     background-position: center 38%;
-    color: blue;
+    color: $color_detalles;
     padding: 15vh 20px;
     text-align: center;
 
@@ -76,7 +78,7 @@
             div {
                 font-style: italic;
                 font-size: 20px;
-                color: #060709;
+                color: $color_base;
                 text-align: left;
                 padding: 20px;
                 margin-left: 30px;
@@ -101,7 +103,7 @@
             }
 
             .button1 {
-                background-color: #fafafa;
+                background-color: $color_detalles;
                 border: 1px solid black;
                 list-style: none;
                 margin-right: 40px;
@@ -109,19 +111,19 @@
                 font-size: 18px;
 
                 &:hover {
-                    background-color: #e6e6e6;
+                    background-color: $hover_claro;
                 }
             }
 
             .button2 {
-                background-color: #060709;
-                color: #fafafa;
+                background-color: $color_base;
+                color: $color_detalles;
                 border: 1px solid black;
                 list-style: none;
                 font-size: 18px;
 
                 &:hover {
-                    background-color: #333;
+                    background-color: $hover_oscuro;
                 }
             }
         }
