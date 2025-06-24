@@ -2,6 +2,19 @@
 /*Colores pagina*/
 /*listas nph($sizes, n°)*/
 /*extends*/
+.product .button1,
+.product .button2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 6px;
+  margin: 10px 5px 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +23,50 @@
 body {
   background-color: #F0E9E9;
   font-family: "jost", sans-serif;
+}
+
+/*header*/
+.navbar {
+  background-color: #060709;
+  display: flex;
+  height: 10vh;
+  color: #F0E9E9;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container-fluid {
+  background-color: #060709;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .container-fluid img {
+  height: 50px;
+  padding-right: 30px !important;
+}
+.navbar .container-fluid h1 {
+  font-size: 1.4rem;
+}
+.navbar .container-fluid .navbar-brand {
+  color: #F0E9E9 !important;
+  background-color: transparent !important;
+  padding-bottom: 0;
+  transition: 0.6s;
+}
+.navbar .container-fluid .navbar-brand:hover {
+  font-size: 23px;
+}
+.navbar .container-fluid .navbar-toggler {
+  background-color: #F0E9E9;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
+  color: #F0E9E9 !important;
+  background-color: transparent !important;
+  transition: 0.6s;
+  font-size: 1.3rem;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
+  font-size: large !important;
 }
 
 /*footer*/
@@ -54,52 +111,38 @@ body {
   text-decoration: underline;
 }
 
-/*header*/
-.navbar {
-  background-color: #060709;
-  display: flex;
-  height: 10vh;
-  color: #F0E9E9;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar .container-fluid {
-  background-color: #060709;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar .container-fluid img {
-  height: 50px;
-  padding-right: 30px !important;
-}
-.navbar .container-fluid .navbar-brand {
-  color: #F0E9E9 !important;
-  background-color: transparent !important;
-  padding-bottom: 0;
-  transition: 0.6s;
-}
-.navbar .container-fluid .navbar-brand:hover {
-  font-size: 23px;
-}
-.navbar .container-fluid .navbar-toggler {
-  background-color: #F0E9E9;
-}
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-link {
-  color: #F0E9E9 !important;
-  background-color: transparent !important;
-  transition: 0.6s;
-}
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-link:hover {
-  font-size: large !important;
+/*Colores pagina*/
+/*listas nph($sizes, n°)*/
+/*extends*/
+.product .button1,
+.product .button2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 6px;
+  margin: 10px 5px 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /*Colores pagina*/
 /*listas nph($sizes, n°)*/
 /*extends*/
-/*Colores pagina*/
-/*listas nph($sizes, n°)*/
-/*extends*/
+.product .button1,
+.product .button2 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 6px;
+  margin: 10px 5px 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 /*index - hero and image*/
 .main-text {
   display: flex;
@@ -130,22 +173,23 @@ body {
 }
 
 /*reviews*/
-.carousel-item img {
+.carousel-inner .carousel-item img {
   height: 250px;
   object-fit: cover;
 }
-.carousel-item .carousel-caption {
+.carousel-inner .carousel-item .carousel-caption {
   display: flex;
   align-content: center;
 }
-.carousel-item .carousel-caption .carousel-inner .carousel-item h2 {
-  font-size: 20px;
+.carousel-inner .carousel-item .carousel-caption h2 {
+  font-size: 1.5rem !important;
+  font-weight: normal;
 }
-.carousel-item .carousel-caption .carousel-inner .carousel-item h3 {
-  font-size: 18px;
+.carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 1rem;
 }
-.carousel-item .carousel-caption .carousel-inner .carousel-item h5 {
-  font-size: 18px;
+.carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 1rem;
 }
 
 /* about the product_ cta buy and details*/
@@ -175,18 +219,6 @@ body {
 .product div p {
   font-size: 20px;
   margin-bottom: 20px;
-}
-.product .button1,
-.product .button2 {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 6px;
-  margin: 10px 5px 0 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 .product .button1 {
   background-color: #F0E9E9;
@@ -498,7 +530,7 @@ body {
     width: 300px;
   }
   .container-intro .robandy1 h2 {
-    font-size: 18px;
+    font-size: 1.5rem !important;
   }
 }
 @media screen and (max-width: 800px) {
@@ -639,17 +671,23 @@ body {
   }
 }
 @media (max-width: 530px) {
-  .carousel .carousel-inner .carousel-item .carousel-caption h2 {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 0;
-    font-weight: normal;
+  .carousel-indicators {
+    display: none;
   }
-  .carousel .carousel-inner .carousel-item .carousel-caption h3 {
-    font-size: 14px;
-  }
-  .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  .carousel-inner .carousel-item .carousel-caption h2 {
     font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
 @media screen and (max-width: 470px) {
@@ -679,6 +717,29 @@ body {
     width: 90%;
   }
 }
+@media (max-width: 420px) {
+  .carousel-inner .carousel-item .carousel-caption {
+    bottom: 10px;
+    top: auto;
+    padding: 10px;
+  }
+  .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 1.2;
+    padding-top: 12px;
+  }
+  .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+  .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+}
 @media (max-width: 414px) {
   .footer-container {
     display: flex;
@@ -690,6 +751,26 @@ body {
   .main-text p {
     font-size: 24px;
     margin-left: 0px;
+  }
+}
+@media (max-width: 390px) {
+  .carousel-inner .carousel-item .carousel-caption {
+    top: auto;
+    padding: 2px;
+  }
+  .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 6px;
+    font-weight: 200;
+  }
+  .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 1.2;
+  }
+  .carousel-inner .carousel-item .carousel-caption h5 {
+    font-size: 8px;
+    font-weight: 200;
+    line-height: 1.2;
   }
 }
 @media (max-width: 374px) {

@@ -1,5 +1,5 @@
 /*index - hero and image*/
-@use "../base/funcionalidades"; 
+@use "../base/funcionalidades";
 
 .main-text {
     display: flex;
@@ -32,127 +32,124 @@
 }
 
 /*reviews*/
-.carousel-item {
-    img {
-        height: 250px;
-        object-fit: cover;
-    }
 
-    .carousel-caption {
-        display: flex;
-        align-content: center;
-        .carousel-inner {
-            .carousel-item {
-                h2 {
-                    font-size: 20px;
-                }
 
-                h3 {
-                    font-size: 18px;
-                }
+.carousel-inner {
+    .carousel-item {
+        img {
+            height: 250px;
+            object-fit: cover;
+        }
 
-                h5 {
-                    font-size: 18px;
-                }
+        .carousel-caption {
+            display: flex;
+            align-content: center;
+
+            h2 {
+                font-size: 1.5rem !important;
+                font-weight: normal;
+
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h5 {
+                font-size: 1rem;
             }
         }
     }
 }
-        /* about the product_ cta buy and details*/
-        .product {
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            align-items: center;
-            height: 50%;
-            margin: 50px;
 
-            img {
-                height: 40vh;
-                width: 40vh;
-                border-radius: 8px;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-                margin-left: 40px;
-            }
 
-            div {
-                font-style: italic;
-                font-size: 20px;
-                color: $color_base;
-                text-align: left;
-                padding: 20px;
-                margin-left: 30px;
+/* about the product_ cta buy and details*/
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 50px;
 
-                p {
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                }
-            }
+    img {
+        height: 40vh;
+        width: 40vh;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        margin-left: 40px;
+    }
 
-            .button1,
-            .button2 {
-                display: inline-block;
-                text-decoration: none;
-                padding: 10px 20px;
-                font-size: 16px;
-                border-radius: 6px;
-                margin: 10px 5px 0 0;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-                transition: all 0.3s ease;
-                cursor: pointer;
-            }
+    div {
+        font-style: italic;
+        font-size: 20px;
+        color: $color_base;
+        text-align: left;
+        padding: 20px;
+        margin-left: 30px;
 
-            .button1 {
-                background-color: $color_detalles;
-                border: 1px solid black;
-                list-style: none;
-                margin-right: 40px;
-                color: #060709;
-                font-size: 18px;
-
-                &:hover {
-                    background-color: $hover_claro;
-                }
-            }
-
-            .button2 {
-                background-color: $color_base;
-                color: $color_detalles;
-                border: 1px solid black;
-                list-style: none;
-                font-size: 18px;
-
-                &:hover {
-                    background-color: $hover_oscuro;
-                }
-            }
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
         }
+    }
 
-        /*collabs*/
-        .collabs-title {
-            text-align: center;
-            font-size: 25px;
-            font-weight: 300px;
-            margin-top: 60px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
+    .button1,
+    .button2 {
+        @extend %boton;
+    }
+
+    .button1 {
+        background-color: $color_detalles;
+        border: 1px solid black;
+        list-style: none;
+        margin-right: 40px;
+        color: #060709;
+        font-size: 18px;
+
+        &:hover {
+            background-color: $hover_claro;
         }
+    }
 
-        .collabs {
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            display: flex;
-            margin-bottom: 30px;
+    .button2 {
+        background-color: $color_base;
+        color: $color_detalles;
+        border: 1px solid black;
+        list-style: none;
+        font-size: 18px;
 
-            img {
-                height: 85px;
-                width: auto;
-                border-radius: 10px;
-
-                &:hover {
-                    transform: scale(120%);
-                    transition-duration: 1s;
-                }
-            }
+        &:hover {
+            background-color: $hover_oscuro;
         }
+    }
+}
+
+/*collabs*/
+.collabs-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.collabs {
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    margin-bottom: 30px;
+
+    img {
+        height: 85px;
+        width: auto;
+        border-radius: 10px;
+
+        &:hover {
+            transform: scale(120%);
+            transition-duration: 1s;
+        }
+    }
+}
